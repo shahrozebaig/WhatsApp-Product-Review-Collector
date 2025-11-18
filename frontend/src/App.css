@@ -5,13 +5,11 @@
   --bg-dark:#05070d;
 }
 
-/* ---------------------- */
-/* BODY + ROOT (FIXED FOR COLORBENDS) */
-/* ---------------------- */
+/* BODY */
 body{
   margin:0;
   padding:0;
-  background: transparent !important;    /* ⭐ allows ColorBends to show */
+  background: var(--bg-dark);   /* normal background */
   font-family:"Inter",sans-serif;
   color:white;
   overflow-x: hidden;
@@ -20,17 +18,15 @@ body{
 .app-root{
   position:relative;
   overflow:hidden;
-  background: transparent !important;    /* ⭐ MUST be transparent */
+  background: var(--bg-dark);
   z-index: 1;
 }
 
-/* ---------------------- */
 /* FLOATING LINES */
-/* ---------------------- */
 .floating-lines{
   position:absolute;
   inset:0;
-  z-index:0;  /* ⭐ behind content, above ColorBends */
+  z-index:0;
   background:
     linear-gradient(to right, transparent 48%, rgba(255,255,255,0.06) 50%, transparent 52%) 0 0/4px 100% repeat-x,
     linear-gradient(to bottom, transparent 48%, rgba(255,255,255,0.06) 50%, transparent 52%) 0 0/100% 4px repeat-y;
@@ -43,19 +39,15 @@ body{
   100%{ transform:translateY(-30px);}
 }
 
-/* ---------------------- */
 /* HERO */
-/* ---------------------- */
 .hero{
   text-align:center;
   padding:60px 10px;
   position:relative;
-  z-index:2;   /* ⭐ keeps content above background */
+  z-index:2;
 }
 
-/* ---------------------- */
 /* SPLIT TEXT */
-/* ---------------------- */
 .split span{
   display:inline-block;
   font-size:3.4rem;
@@ -80,9 +72,7 @@ body{
   100%{ transform:translateY(0); opacity:1;}
 }
 
-/* ---------------------- */
 /* SCROLL TEXT */
-/* ---------------------- */
 .scroll-box{
   overflow:hidden;
   white-space:nowrap;
@@ -101,16 +91,14 @@ body{
   100%{ transform:translateX(-100%);}
 }
 
-/* ---------------------- */
 /* TABLE */
-/* ---------------------- */
 .table-wrapper {
   width: 100%;
   margin-top: 40px;
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 2;   /* ⭐ table above background */
+  z-index: 2;
 }
 
 .reviews-table {
@@ -156,31 +144,11 @@ body{
   margin-top: 40px;
 }
 
-/* ---------------------- */
 /* FOOTER */
-/* ---------------------- */
 .footer{
   text-align:center;
   padding:20px;
   color:var(--muted);
   position:relative;
-  z-index:2;   /* ⭐ above background */
-}
-.color-bends-container {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;     /* ⭐ behind EVERYTHING */
-  pointer-events: none;
-}
-.dark-overlay {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(5, 7, 13, 0.65); /* ⭐ dark glass layer */
-  backdrop-filter: blur(4px);        /* ⭐ softens colors */
-  z-index: 0.5;                      /* ⭐ above ColorBends, below floating-lines */
-  pointer-events: none;
+  z-index:2;
 }
