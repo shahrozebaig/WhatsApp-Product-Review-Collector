@@ -48,10 +48,6 @@ Transform customer feedback into beautiful visual experiences! 💬✨
 
 ## System Architecture
 
-<img width="1786" height="1455" alt="Screenshot 2025-11-19 003245" src="https://github.com/user-attachments/assets/002a9e2f-cd8a-4528-97a7-f6c94a17c7c6" />
-
----
-
 <img width="1938" height="498" alt="image" src="https://github.com/user-attachments/assets/b27c18c0-2863-4a09-9cea-e36d264ede88" />
 
 ---
