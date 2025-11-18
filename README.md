@@ -1,6 +1,6 @@
 # 🚀 ReviewWave – WhatsApp Product Review Collector
 
-A stunning full-stack application that collects product reviews via **WhatsApp** using **Twilio** and displays them on a modern **React UI** with **breathtaking 3D animated backgrounds**.
+This project is a full-stack system that collects customer product reviews through WhatsApp using the Twilio API, processes the conversation with a FastAPI backend, stores all submitted reviews in a PostgreSQL database, and displays them on a modern React web interface. It automates the entire review collection workflow, allowing users to submit product details and feedback through a simple WhatsApp chat, while the frontend presents the stored reviews in a clean, animated dashboard. The application demonstrates seamless integration between messaging automation, backend logic, database management, and a polished UI, all deployed on Render for real-time access.
 
 Transform customer feedback into beautiful visual experiences! 💬✨
 
