@@ -35,7 +35,7 @@ function App() {
       <ReviewsList reviews={reviews} />
 
       {/* Footer */}
-      <footer className="footer">Made with ❤️ ReviewWave</footer>
+      <footer className="footer">.</footer>
     </div>
   );
 }
