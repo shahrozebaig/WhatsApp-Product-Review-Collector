@@ -4,11 +4,6 @@ A stunning full-stack application that collects product reviews via **WhatsApp**
 
 Transform customer feedback into beautiful visual experiences! 💬✨
 
-[![Deploy on Render](https://img.shields.io/badge/Deploy-Render-46E3B7?style=for-the-badge&logo=render)](https://render.com)
-[![Made with React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org/)
-
 ---
 
 ## 🌟 What This App Does
@@ -36,13 +31,33 @@ Transform customer feedback into beautiful visual experiences! 💬✨
 
 ---
 
+## ScreenShots
+<img width="2259" height="1618" alt="Screenshot 2025-11-19 003154" src="https://github.com/user-attachments/assets/e14ffb5b-8054-40cd-8edc-9f912303e0ef" />
+
+
+<img width="2251" height="1617" alt="Screenshot 2025-11-19 003212" src="https://github.com/user-attachments/assets/9acd3a13-ab6c-4de0-8946-7a558386e150" />
+
+
+<img width="2262" height="1707" alt="Screenshot 2025-11-19 003229" src="https://github.com/user-attachments/assets/7199a09a-f420-45bc-b45f-982c6d110277" />
+
+
+
+<img width="2754" height="1240" alt="Screenshot 2025-11-19 003341" src="https://github.com/user-attachments/assets/634fd080-8486-4bde-97a3-932106510e7e" />
+
+---
+
+## System Architecture
+
+<img width="1786" height="1455" alt="Screenshot 2025-11-19 003245" src="https://github.com/user-attachments/assets/002a9e2f-cd8a-4528-97a7-f6c94a17c7c6" />
+
+---
 ## 🏗️ Project Structure
 
 ```
 ReviewWave/
 │
 ├── backend/
-│   ├── main.py                    #
+│   ├── main.py                    
 │   ├── models.py                  
 │   ├── database.py                
 │   ├── schemas.py                 
@@ -95,29 +110,6 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 ---
 
-## 💬 Twilio WhatsApp Configuration
-
-### **Step 1: Setup WhatsApp Sandbox**
-1. Go to [Twilio Console](https://console.twilio.com/)
-2. Navigate to **Messaging** → **Try it Out** → **Send a WhatsApp message**
-3. Copy your sandbox phone number
-
-### **Step 2: Configure Webhook**
-Set the webhook URL to your deployed backend:
-```
-URL: https://your-backend.onrender.com/webhook
-Method: POST
-```
-
-### **Step 3: Join Sandbox**
-1. Send the join code to the Twilio sandbox number on WhatsApp
-2. You'll receive a confirmation message
-
-### **Step 4: Test the Bot**
-Send any message (e.g., `hi`) to start the review flow!
-
----
-
 ## 🧪 End-to-End Testing
 
 ### **Complete Testing Flow:**
@@ -138,12 +130,10 @@ Send any message (e.g., `hi`) to start the review flow!
 4. **🌐 View on Frontend**
    - Open your frontend URL
    - Refresh page if needed
-   - See your review in the beautiful animated table!
+   - See your review in the table!
 
 5. **🎉 Success!**
    - Review appears with timestamp
-   - Background animations running smoothly
-
 ---
 
 ## 📊 Database Schema
@@ -183,7 +173,6 @@ Send any message (e.g., `hi`) to start the review flow!
   ]
 }
 ```
-
 ---
 
 
