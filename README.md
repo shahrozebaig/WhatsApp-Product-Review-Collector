@@ -10,6 +10,8 @@ Transform customer feedback into beautiful visual experiences! 💬✨
 
 https://whatsapp-product-review-collector-1.onrender.com/
 
+After opening Try to refresh the page to check the results 
+
 ---
 
 ## 🌟 What This App Does
