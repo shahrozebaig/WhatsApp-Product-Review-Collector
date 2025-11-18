@@ -10,7 +10,7 @@ Transform customer feedback into beautiful visual experiences! 💬✨
 
 https://whatsapp-product-review-collector-1.onrender.com/
 
-After opening Try to refresh the page to check the results 
+**The website normally shows all the reviews properly, but if there hasn’t been any interaction for a long time, it may stop displaying them. This happens because the backend and WhatsApp/Twilio connection can become inactive after a long gap. Once the system goes idle, it won’t load the reviews until a new request or interaction is made.**
 
 ---
 
