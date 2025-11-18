@@ -1,30 +1,36 @@
 :root{
   --accent1:#7c3aed;
   --accent2:#06b6d4;
-  --neon:#8a5cf6;
   --muted:#e0e0e0;
   --bg-dark:#05070d;
 }
 
+/* ---------------------- */
+/* BODY + ROOT (FIXED FOR COLORBENDS) */
+/* ---------------------- */
 body{
   margin:0;
-  background:var(--bg-dark);
+  padding:0;
+  background: transparent !important;    /* ⭐ allows ColorBends to show */
   font-family:"Inter",sans-serif;
   color:white;
+  overflow-x: hidden;
 }
 
 .app-root{
-  position:relative;       /* <<< REQUIRED */
-  overflow:hidden;         /* <<< REQUIRED */
+  position:relative;
+  overflow:hidden;
+  background: transparent !important;    /* ⭐ MUST be transparent */
+  z-index: 1;
 }
 
 /* ---------------------- */
-/* Floating Lines Background */
+/* FLOATING LINES */
 /* ---------------------- */
 .floating-lines{
   position:absolute;
   inset:0;
-  z-index:0;               /* <<< BEHIND CONTENT */
+  z-index:0;  /* ⭐ behind content, above ColorBends */
   background:
     linear-gradient(to right, transparent 48%, rgba(255,255,255,0.06) 50%, transparent 52%) 0 0/4px 100% repeat-x,
     linear-gradient(to bottom, transparent 48%, rgba(255,255,255,0.06) 50%, transparent 52%) 0 0/100% 4px repeat-y;
@@ -34,11 +40,21 @@ body{
 
 @keyframes linesMove{
   0%{ transform:translateY(0);}
-  100%{ transform:translateY(-40px);}
+  100%{ transform:translateY(-30px);}
 }
 
 /* ---------------------- */
-/* Split Text Animation */
+/* HERO */
+/* ---------------------- */
+.hero{
+  text-align:center;
+  padding:60px 10px;
+  position:relative;
+  z-index:2;   /* ⭐ keeps content above background */
+}
+
+/* ---------------------- */
+/* SPLIT TEXT */
 /* ---------------------- */
 .split span{
   display:inline-block;
@@ -47,9 +63,7 @@ body{
   animation: pop 0.6s ease forwards;
   opacity:0;
 }
-.split span:nth-child(n){
-  animation-delay: calc(0.05s * var(--i));
-}
+.split span:nth-child(n){ animation-delay: calc(0.05s * var(--i)); }
 .split span:nth-child(1){ --i:1 }
 .split span:nth-child(2){ --i:2 }
 .split span:nth-child(3){ --i:3 }
@@ -67,67 +81,106 @@ body{
 }
 
 /* ---------------------- */
-/* Scrolling Velocity Text */
+/* SCROLL TEXT */
 /* ---------------------- */
 .scroll-box{
   overflow:hidden;
   white-space:nowrap;
   margin-top:10px;
 }
+
 .scroll-text{
   display:inline-block;
   font-size:1rem;
   color:var(--muted);
   animation: scroll 12s linear infinite;
 }
+
 @keyframes scroll{
   0%{ transform:translateX(0);}
   100%{ transform:translateX(-100%);}
 }
 
 /* ---------------------- */
-/* HERO */
+/* TABLE */
 /* ---------------------- */
-.hero{
-  text-align:center;
-  padding:60px 10px;
-  position:relative;
-  z-index:1;         /* <<< ABOVE FLOATING LINES */
+.table-wrapper {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;   /* ⭐ table above background */
 }
 
-/* ------------------------- */
-/* ELECTRIC BORDER CONTAINER */
-/* ------------------------- */
-.electric-border{
-  margin:40px auto;
-  padding:20px;
-  border-radius:20px;
-  border:2px solid transparent;
-  background:
-    linear-gradient(var(--bg-dark), var(--bg-dark)) padding-box,
-    linear-gradient(90deg, var(--accent1), var(--accent2)) border-box;
-  box-shadow:
-    0 0 20px rgba(124,58,237,0.4),
-    0 0 30px rgba(6,182,212,0.4);
-  animation: electricGlow 3s ease-in-out infinite alternate;
-  position:relative;
-  z-index:1;        /* <<< ABOVE FLOATING BG */
+.reviews-table {
+  width: 90%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1rem;
 }
 
-@keyframes electricGlow{
-  0%{ box-shadow:0 0 14px var(--accent1); }
-  100%{ box-shadow:0 0 28px var(--accent2); }
+.reviews-table th,
+.reviews-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.main-wrapper{
-  max-width:900px;
+.reviews-table th {
+  background: rgba(255,255,255,0.1);
+  font-weight: 700;
+  text-align: left;
 }
 
+.reviews-table tr:last-child td {
+  border-bottom: none;
+}
+
+.review-cell {
+  white-space: normal;
+  line-height: 1.5;
+  width: 50%;
+}
+
+.reviews-table tr:hover {
+  background: rgba(255,255,255,0.08);
+  transition: 0.2s;
+}
+
+/* NO REVIEWS */
+.no-reviews {
+  text-align: center;
+  color: #ccc;
+  margin-top: 40px;
+}
+
+/* ---------------------- */
+/* FOOTER */
+/* ---------------------- */
 .footer{
   text-align:center;
   padding:20px;
   color:var(--muted);
-  margin-bottom:20px;
   position:relative;
-  z-index:1;
+  z-index:2;   /* ⭐ above background */
+}
+.color-bends-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;     /* ⭐ behind EVERYTHING */
+  pointer-events: none;
+}
+.dark-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 7, 13, 0.65); /* ⭐ dark glass layer */
+  backdrop-filter: blur(4px);        /* ⭐ softens colors */
+  z-index: 0.5;                      /* ⭐ above ColorBends, below floating-lines */
+  pointer-events: none;
 }

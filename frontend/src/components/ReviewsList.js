@@ -13,7 +13,7 @@ function ReviewsList({ reviews }) {
           <tr>
             <th>User</th>
             <th>Product</th>
-            <th>Review</th>
+            <th style={{ width: "50%" }}>Review</th>
             <th>Time</th>
           </tr>
         </thead>
@@ -23,7 +23,7 @@ function ReviewsList({ reviews }) {
             <tr key={r.id}>
               <td>{r.user_name}</td>
               <td>{r.product_name}</td>
-              <td>{r.product_review}</td>
+              <td className="review-cell">{r.product_review}</td>
               <td>{new Date(r.created_at).toLocaleString()}</td>
             </tr>
           ))}

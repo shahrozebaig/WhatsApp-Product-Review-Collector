@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { fetchReviews } from "./services/api";
 import ReviewsList from "./components/ReviewsList";
+import ColorBends from "./ColorBends";
 import "./App.css";
 
 function App() {
@@ -13,12 +14,32 @@ function App() {
   return (
     <div className="app-root">
 
-      <div className="floating-lines"></div>  {/* <<< FIXED POSITION */}
+      {/* ⭐ Animated Color Wave Background */}
+      <ColorBends
+        colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+        rotation={30}
+        speed={0.3}
+        scale={1.2}
+        frequency={1.4}
+        warpStrength={1.2}
+        mouseInfluence={0.8}
+        parallax={0.6}
+        noise={0.08}
+        transparent
+      />
 
+      {/* ⭐ Dark overlay to make text readable */}
+      <div className="dark-overlay"></div>
+
+      {/* ⭐ Floating lines */}
+      <div className="floating-lines"></div>
+
+      {/* ⭐ Hero Title */}
       <header className="hero">
         <h1 className="split">
-          <span>R</span><span>e</span><span>v</span><span>i</span><span>e</span><span>w</span>
-          <span>W</span><span>a</span><span>v</span><span>e</span>
+          <span>R</span><span>e</span><span>v</span><span>i</span>
+          <span>e</span><span>w</span><span>W</span><span>a</span>
+          <span>v</span><span>e</span>
         </h1>
 
         <div className="scroll-box">
@@ -28,10 +49,10 @@ function App() {
         </div>
       </header>
 
-      <main className="main-wrapper electric-border">
-        <ReviewsList reviews={reviews} />
-      </main>
+      {/* ⭐ Table */}
+      <ReviewsList reviews={reviews} />
 
+      {/* ⭐ Footer */}
       <footer className="footer">Made with ❤️ ReviewWave</footer>
     </div>
   );
