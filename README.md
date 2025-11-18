@@ -79,37 +79,6 @@ ReviewWave/
 ```
 ---
 
-## ⚙️ Backend Setup (Local)
-
-### **1. Navigate to Backend Directory**
-```bash
-cd backend
-```
-
-### **2. Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-### **3. Configure Database**
-Create a `.env` file or set environment variable:
-```env
-DATABASE_URL=postgresql://username:password@host:port/dbname
-```
-> **Note:** If `DATABASE_URL` is not set, the app automatically falls back to SQLite for local development.
-
-### **4. Run Backend Server**
-```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
-
-### **5. Access the API**
-- 🌐 **Main:** http://localhost:8000
-- 📚 **API Docs:** http://localhost:8000/docs (Interactive Swagger UI)
-- 📖 **ReDoc:** http://localhost:8000/redoc
-
----
-
 ## 🧪 End-to-End Testing
 
 ### **Complete Testing Flow:**
