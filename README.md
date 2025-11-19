@@ -48,10 +48,7 @@ https://www.loom.com/share/1eeb472221df47a8afd44ad9d2f91c10
 
 <img width="2251" height="1617" alt="Screenshot 2025-11-19 003212" src="https://github.com/user-attachments/assets/9acd3a13-ab6c-4de0-8946-7a558386e150" />
 
-<img width="2754" height="1240" alt="Screenshot 2025-11-19 003341" src="https://github.com/user-attachments/assets/634fd080-8486-4bde-97a3-932106510e7e" />
-
 <img width="2761" height="1514" alt="Screenshot 2025-11-19 095502" src="https://github.com/user-attachments/assets/e4e81dde-6470-4b28-b8c2-33243cc51979" />
-
 
 ---
 
