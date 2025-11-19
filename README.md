@@ -12,6 +12,16 @@ https://whatsapp-product-review-collector-1.onrender.com/
 
 **The website normally shows all the reviews properly, but if there hasn’t been any interaction for a long time, it may stop displaying them. This happens because the backend and WhatsApp/Twilio connection can become inactive after a long gap. Once the system goes idle, it won’t load the reviews until a new request or interaction is made.**
 
+## Submit a Phone Review (Sandbox)
+
+- Open WhatsApp on your phone.
+- Send "hi" or "hello" to +1 415 523 8886 to start the conversation.
+- Join the Sandbox by sending: join safe-announced.
+- Now type your review details (product name, your name, review text) in the chat — send them one after another as the bot asks.
+- To view your submitted review, open: https://whatsapp-product-review-collector-1.onrender.com/
+- When you want to finish the session, send stop in the WhatsApp chat.
+- You can invite friends to the Sandbox by having them message the same WhatsApp number and use the same join safe-announced code.
+
 ## Loom Video
 
 https://www.loom.com/share/1eeb472221df47a8afd44ad9d2f91c10
