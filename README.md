@@ -12,6 +12,10 @@ https://whatsapp-product-review-collector-1.onrender.com/
 
 **The website normally shows all the reviews properly, but if there hasn’t been any interaction for a long time, it may stop displaying them. This happens because the backend and WhatsApp/Twilio connection can become inactive after a long gap. Once the system goes idle, it won’t load the reviews until a new request or interaction is made.**
 
+## Loom Video
+
+https://www.loom.com/share/1eeb472221df47a8afd44ad9d2f91c10
+
 ---
 
 ## 🌟 What This App Does
@@ -46,7 +50,8 @@ https://whatsapp-product-review-collector-1.onrender.com/
 
 <img width="2754" height="1240" alt="Screenshot 2025-11-19 003341" src="https://github.com/user-attachments/assets/634fd080-8486-4bde-97a3-932106510e7e" />
 
-![Screenshot_2025-11-19-02-40-29-97_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/user-attachments/assets/28e3671a-fcba-4add-a5ae-ebe15287b49c)
+<img width="2761" height="1514" alt="Screenshot 2025-11-19 095502" src="https://github.com/user-attachments/assets/e4e81dde-6470-4b28-b8c2-33243cc51979" />
+
 
 ---
 
