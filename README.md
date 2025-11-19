@@ -14,13 +14,20 @@ https://whatsapp-product-review-collector-1.onrender.com/
 
 ## Submit a Phone Review (Sandbox)
 
-- Open WhatsApp on your phone.
-- Send "hi" or "hello" to +1 415 523 8886 to start the conversation.
-- Join the Sandbox by sending: join safe-announced.
-- Now type your review details (product name, your name, review text) in the chat — send them one after another as the bot asks.
+- Open WhatsApp and start a chat with the Sandbox number: +1 415 523 8886.
+- First message: join the Sandbox by sending the join code exactly (example): join safe-announced
+   — you’ll get a confirmation message from Twilio Sandbox saying the sandbox is active for your number.
+- Next: send hi or hello to begin the review conversation.
+- Follow the bot’s prompts and reply step-by-step when asked:
+  - Product name → send it
+  - Your name → send it
+  - Review text → send it
+- After you finish, the backend saves your review.
 - To view your submitted review, open: https://whatsapp-product-review-collector-1.onrender.com/
-- When you want to finish the session, send stop in the WhatsApp chat.
-- You can invite friends to the Sandbox by having them message the same WhatsApp number and use the same join safe-announced code.
+- To end the session any time, send: stop in the WhatsApp chat.
+**Note: Sandbox membership lasts ~72 hours — if it expires, just send the same join again.**
+
+![1](https://github.com/user-attachments/assets/612e6408-13c3-4989-a74d-caa6bcb9b6eb)
 
 ## Loom Video
 
@@ -55,7 +62,6 @@ https://www.loom.com/share/1eeb472221df47a8afd44ad9d2f91c10
 ---
 
 ## ScreenShots
-<img width="2259" height="1618" alt="Screenshot 2025-11-19 003154" src="https://github.com/user-attachments/assets/e14ffb5b-8054-40cd-8edc-9f912303e0ef" />
 
 <img width="2251" height="1617" alt="Screenshot 2025-11-19 003212" src="https://github.com/user-attachments/assets/9acd3a13-ab6c-4de0-8946-7a558386e150" />
 
