@@ -37,6 +37,7 @@ https://www.loom.com/share/1eeb472221df47a8afd44ad9d2f91c10
 
 ## ✨ Mp4
 
+**Collects product reviews through WhatsApp. The user sends their details, the backend processes and saves the review, and it instantly appears on the frontend. This video shows the WhatsApp interaction and how the review is displayed on the website.**
 
 [screen-capture.webm](https://github.com/user-attachments/assets/4e796ea9-20fc-4ecf-b868-2dab5c8c6d18)
 
